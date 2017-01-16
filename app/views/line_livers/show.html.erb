@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @line_liver.name %>
+</p>
+
+<p>
+  <strong>Line liver:</strong>
+  <%= @line_liver.line_liver_id %>
+</p>
+
+<p>
+  <strong>Active:</strong>
+  <%= @line_liver.active %>
+</p>
+
+<%= link_to 'Edit', edit_line_liver_path(@line_liver) %> |
+<%= link_to 'Back', line_livers_path %>

@@ -1,0 +1,1 @@
+json.array! @line_livers, partial: 'line_livers/line_liver', as: :line_liver

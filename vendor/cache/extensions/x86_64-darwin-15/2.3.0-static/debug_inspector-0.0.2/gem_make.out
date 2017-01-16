@@ -1,0 +1,15 @@
+current directory: /Users/Mac/dandywork/rails_projects/saburo_web/vendor/cache/gems/debug_inspector-0.0.2/ext/debug_inspector
+/Users/Mac/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20170116-75823-1221xur.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Mac/dandywork/rails_projects/saburo_web/vendor/cache/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/Mac/dandywork/rails_projects/saburo_web/vendor/cache/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/Mac/dandywork/rails_projects/saburo_web/vendor/cache/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20170116-75823-o2zkmf

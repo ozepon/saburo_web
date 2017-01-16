@@ -1,0 +1,1 @@
+json.partial! "line_livers/line_liver", line_liver: @line_liver

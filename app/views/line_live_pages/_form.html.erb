@@ -1,0 +1,27 @@
+<%= form_for(line_live_page) do |f| %>
+  <% if line_live_page.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(line_live_page.errors.count, "error") %> prohibited this line_live_page from being saved:</h2>
+
+      <ul>
+      <% line_live_page.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %>
+    <%= f.text_area :value %>
+  </div>
+
+  <div class="field">
+    <%= f.label :line_liver_id %>
+    <%= f.text_field :line_liver_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module LineLivePagesHelper
+end

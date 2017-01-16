@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Line Live Pages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Line liver</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @line_live_pages.each do |line_live_page| %>
+      <tr>
+        <td><%= line_live_page.value %></td>
+        <td><%= line_live_page.line_liver %></td>
+        <td><%= link_to 'Show', line_live_page %></td>
+        <td><%= link_to 'Edit', edit_line_live_page_path(line_live_page) %></td>
+        <td><%= link_to 'Destroy', line_live_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Line Live Page', new_line_live_page_path %>

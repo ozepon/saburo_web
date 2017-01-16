@@ -1,0 +1,1 @@
+json.partial! "live_livers_managements/live_livers_management", live_livers_management: @live_livers_management

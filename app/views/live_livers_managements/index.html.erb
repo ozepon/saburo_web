@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= "#{@liver.name}のフォロワー数" %></h1>
+<%- days = [] %>
+<%- follower_list = [] %>
+<%- @liver.line_live_pages.order('created_at').each do |page| %>
+    <%- days << page.created_at.to_s.split(/\s/)[0].html_safe %>
+    <%- follower_list << page.follower_count %>
+<% end %>
+<canvas id="myChart" width="400" height="400"></canvas>
+<script>
+    var ctx = document.getElementById("myChart");
+    var myChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: <%= raw(days) %>,
+        datasets: [{
+          label: 'フォロワー数',
+          data: <%= follower_list %>,
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      xLabels: 'hoge',
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero:true
+            }
+          }]
+        }
+      }
+    });
+//  created_at.to_s.split(/\s/)
+</script>
+

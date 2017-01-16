@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Line Livers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Line liver</th>
+      <th>Active</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @line_livers.each do |line_liver| %>
+      <tr>
+        <td><%= line_liver.name %></td>
+        <td><%= line_liver.line_liver_id %></td>
+        <td><%= line_liver.active %></td>
+        <td><%= link_to 'Show', line_liver %></td>
+        <td><%= link_to 'Edit', edit_line_liver_path(line_liver) %></td>
+        <td><%= link_to 'Destroy', line_liver, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Line Liver', new_line_liver_path %>

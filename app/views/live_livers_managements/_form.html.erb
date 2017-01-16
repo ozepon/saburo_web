@@ -1,0 +1,17 @@
+<%= form_for(live_livers_management) do |f| %>
+  <% if live_livers_management.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(live_livers_management.errors.count, "error") %> prohibited this live_livers_management from being saved:</h2>
+
+      <ul>
+      <% live_livers_management.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

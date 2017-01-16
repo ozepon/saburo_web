@@ -1,0 +1,1 @@
+json.array! @line_live_pages, partial: 'line_live_pages/line_live_page', as: :line_live_page

@@ -1,0 +1,1 @@
+json.partial! "line_live_pages/line_live_page", line_live_page: @line_live_page

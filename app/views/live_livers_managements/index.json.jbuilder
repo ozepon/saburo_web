@@ -1,0 +1,1 @@
+json.array! @live_livers_managements, partial: 'live_livers_managements/live_livers_management', as: :live_livers_management
