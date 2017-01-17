@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
-
-<h1><%= "#{@liver.name}のフォロワー数" %></h1>
+<div class="line_liver_header">
+  <h1 class="line_liver_header__title"><%= "#{@liver.name}" %></h1>
+  <h1 class="line_liver_header__title"><%= "のフォロワー数" %></h1>
+</div>
 <%- days = [] %>
 <%- follower_list = [] %>
 <%- @liver.line_live_pages.order('created_at').each do |page| %>
@@ -34,6 +36,5 @@
         }
       }
     });
-//  created_at.to_s.split(/\s/)
 </script>
 

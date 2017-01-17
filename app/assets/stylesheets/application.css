@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+.line_liver_header {
+    width: 100%;
+    line-height: 1em;
+}
+.line_liver_header__title {
+    line-height: 1em;
+    font-size: 1.5em;
+}
