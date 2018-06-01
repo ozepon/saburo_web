@@ -1,0 +1,1 @@
+json.array! @nagayoshi_bookmark_logs, partial: 'nagayoshi_bookmark_logs/nagayoshi_bookmark_log', as: :nagayoshi_bookmark_log

@@ -1,0 +1,22 @@
+<%= form_for(nagayoshi_bookmark_log) do |f| %>
+  <% if nagayoshi_bookmark_log.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(nagayoshi_bookmark_log.errors.count, "error") %> prohibited this nagayoshi_bookmark_log from being saved:</h2>
+
+      <ul>
+      <% nagayoshi_bookmark_log.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

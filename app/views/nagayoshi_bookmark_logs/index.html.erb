@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Nagayoshi Bookmark Logs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name:</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @nagayoshi_bookmark_logs.each do |nagayoshi_bookmark_log| %>
+      <tr>
+        <td><%= nagayoshi_bookmark_log.name %></td>
+        <td><%= link_to 'Show', nagayoshi_bookmark_log %></td>
+        <td><%= link_to 'Edit', edit_nagayoshi_bookmark_log_path(nagayoshi_bookmark_log) %></td>
+        <td><%= link_to 'Destroy', nagayoshi_bookmark_log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Nagayoshi Bookmark Log', new_nagayoshi_bookmark_log_path %>

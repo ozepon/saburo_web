@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :nagayoshi_bookmark_logs
   resources :line_live_pages
   resources :line_livers
 

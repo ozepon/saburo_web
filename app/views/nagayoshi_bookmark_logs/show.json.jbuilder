@@ -1,0 +1,1 @@
+json.partial! "nagayoshi_bookmark_logs/nagayoshi_bookmark_log", nagayoshi_bookmark_log: @nagayoshi_bookmark_log
